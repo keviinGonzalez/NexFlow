@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Elementos de la solución/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Project Path="NexFlow.Api/NexFlow.Api.csproj" />
+  <Project Path="NexFlow.Application/NexFlow.Application.csproj" />
+  <Project Path="NexFlow.Domain/NexFlow.Domain.csproj" />
+  <Project Path="NexFlow.Infrastructure/NexFlow.Infrastructure.csproj" />
+  <Project Path="NexFlow.Tests/NexFlow.Tests.csproj" />
+</Solution>
