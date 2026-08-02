@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NexFlow.Application.Features.Request.Commands.CreateRequest;
@@ -11,6 +12,7 @@ namespace NexFlow.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class RequestsController : ControllerBase
     {
         private readonly ISender _sender;

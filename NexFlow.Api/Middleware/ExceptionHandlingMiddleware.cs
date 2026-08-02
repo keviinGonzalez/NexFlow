@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NexFlow.Api.Exceptions;
 using NexFlow.Api.Observability;
+using Rollbar;
 using System.Text.Json;
 
 namespace NexFlow.Api.Middleware
@@ -25,6 +26,8 @@ namespace NexFlow.Api.Middleware
             catch (Exception exception)
             {
                 ExceptionLogger.Log(_logger, context, exception);
+
+                RollbarLocator.RollbarInstance.Error(exception);
 
                 var result = ExceptionMapper.Map(exception);
 

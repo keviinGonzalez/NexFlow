@@ -25,16 +25,5 @@ namespace NexFlow.Api.Controllers
             var response = await _sender.Send(command, cancellationToken);
             return Ok(response);
         }
-
-        [Authorize]
-        [HttpGet("me")]
-        public IActionResult Me()
-        {
-            return Ok(User.Claims.Select(c => new
-            {
-                c.Type,
-                c.Value
-            }));
-        }
     }
 }

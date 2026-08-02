@@ -47,6 +47,7 @@ namespace NexFlow.Api
             // Add application and infrastructure services
             builder.Services.AddApplication();
             builder.Services.AddInfrastructure(builder.Configuration);
+            builder.Services.AddRollbarMonitoring(builder.Configuration);
             // Add JWT authentication
             builder.Services.AddJwtAuthentication(builder.Configuration);
 
