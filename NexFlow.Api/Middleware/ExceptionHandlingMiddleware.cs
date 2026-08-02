@@ -27,7 +27,15 @@ namespace NexFlow.Api.Middleware
             {
                 ExceptionLogger.Log(_logger, context, exception);
 
-                RollbarLocator.RollbarInstance.Error(exception);
+                //RollbarLocator.RollbarInstance.Error(exception);
+                RollbarLocator.RollbarInstance.Error(
+                exception,
+                new Dictionary<string, object?>
+                {
+                    ["TraceId"] = context.TraceIdentifier,
+                    ["Path"] = context.Request.Path.ToString(),
+                    ["Method"] = context.Request.Method
+                });
 
                 var result = ExceptionMapper.Map(exception);
 
