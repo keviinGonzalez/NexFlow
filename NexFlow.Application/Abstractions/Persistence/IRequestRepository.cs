@@ -1,4 +1,4 @@
-﻿using NexFlow.Domain.Entities;
+﻿using NexFlow.Domain.Entities.Requests;
 using System;
 using System.Collections.Generic;
 using System.Text;

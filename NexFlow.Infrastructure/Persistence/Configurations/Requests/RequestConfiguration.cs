@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NexFlow.Domain.Entities;
+using NexFlow.Domain.Entities.Requests;
 using System;
 using System.Collections.Generic;
 using System.Text;

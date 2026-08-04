@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using NexFlow.Domain.Entities;
+using NexFlow.Domain.Entities.Requests;
 using NexFlow.Infrastructure.Identity;
 using System;
 using System.Collections.Generic;

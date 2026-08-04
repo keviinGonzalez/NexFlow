@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NexFlow.Application.Abstractions.Persistence;
-using NexFlow.Domain.Entities;
+using NexFlow.Domain.Entities.Requests;
 using NexFlow.Infrastructure.Persistence.Context;
 using System;
 using System.Collections.Generic;
